@@ -76,12 +76,12 @@ minimize       1.0e-4 1.0e-6 1000 10000
 
 
 # ------------------------------------------------------------------------------
-# 2. EQUILIBRATION | NVT Ensemble | 500 ps
+# 2. EQUILIBRATION | NVT Ensemble | 1 ns
 # ------------------------------------------------------------------------------
 # Methodology Note (Difference from 1964):
 # The 1964 study used a simple one-time velocity scaling to set the
 # initial temperature. This script employs a more robust, modern
-# approach: a 500 ps NVT (isothermal-isochoric) equilibration run.
+# approach: a 1 ns NVT (isothermal-isochoric) equilibration run.
 #
 # Justification:
 # 1. Melts the System: This run allows the initial FCC crystal to "melt"
@@ -92,7 +92,7 @@ minimize       1.0e-4 1.0e-6 1000 10000
 #    and potential energies are properly distributed. This is a more
 #    reliable method than a single velocity scaling.
 #
-print          "--- Starting NVT Equilibration (500 ps) ---"
+print          "--- Starting NVT Equilibration (1 ns) ---"
 
 velocity       all create ${T} 54321 mom yes rot yes dist gaussian
 timestep       2.0
