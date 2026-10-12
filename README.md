@@ -2,7 +2,7 @@
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Code style: Ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
+[![Code style: Ruff](<https://img.shields.io/badge/code%20style-ruff-000000.svg>)](https://github.com/astral-sh/ruff)
 
 > **Reproducing the foundations of molecular dynamics simulation**
 
@@ -23,10 +23,12 @@ The simulation revealed that liquid argon atoms don't undergo simple Brownian mo
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Python 3.10+
 - [uv](https://docs.astral.sh/uv/) package manager
 
 ### Installation
+
 ```bash
 git clone https://github.com/hunter-heidenreich/argon-simulation.git
 cd argon-simulation
@@ -34,6 +36,7 @@ make install
 ```
 
 ### Generate Results
+
 ```bash
 # Run simulation and generate all analyses
 make workflow
@@ -50,15 +53,17 @@ make help
 ## 📊 Analysis Features
 
 ### Core Physical Quantities
+
 - **🌡️ Temperature Analysis** - Instantaneous temperature from kinetic energy
-- **📍 Radial Distribution Function g(r)** - Atomic structure characterization  
+- **📍 Radial Distribution Function g(r)** - Atomic structure characterization
 - **📏 Mean Square Displacement** - Diffusive behavior and diffusion coefficient
 - **🔄 Velocity Autocorrelation Function** - Atomic motion memory effects
 - **📐 Van Hove Correlation Functions** - Space-time correlation analysis
 
 ### Features
+
 - **⚡ Intelligent Caching** - Expensive computations cached automatically
-- **🧠 Memory Management** - Handles large trajectories efficiently  
+- **🧠 Memory Management** - Handles large trajectories efficiently
 - **📈 Professional Plotting** - Publication-ready figures
 - **🔬 Rahman Comparisons** - Direct comparison with 1964 paper values
 
